@@ -1,5 +1,5 @@
-describe('login', () => {
-  it('successful login', () => {
+describe('orange hrm tests', () => {
+  beforeEach (() => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
     cy.fixture("orange-hrm").then((data)=>{
@@ -9,5 +9,14 @@ describe('login', () => {
       ln.clickSubmit()
       ln.verifyLogin()
     })
+    
+  })
+
+  afterEach (() => {
+    logout
+  })
+
+  it('search', () => {
+    
   })
 })

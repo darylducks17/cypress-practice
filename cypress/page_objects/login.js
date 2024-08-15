@@ -16,5 +16,6 @@ class login {
     verifyLogin(){
         cy.get(this.lblMsg).should("have.text", "Dashboard")
     }
+
 }
 export default login
