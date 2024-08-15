@@ -1,0 +1,13 @@
+{
+    "successful login" : {
+        "username": "Admin",
+        "password": "admin123",
+        "expected": "Dashboard"
+    },
+
+    "unsuccessful login": {
+        "username": "",
+        "password": "adin123",
+        "expected": "Invalid Credentials"
+    }   
+}
