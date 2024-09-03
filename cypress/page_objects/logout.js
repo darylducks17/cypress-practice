@@ -7,6 +7,8 @@ class logout {
         cy.get(this.btnDropDown).click()
     }
     clickLogOut() {
+        //used wait as cypress was too fast for the website to process
+        cy.wait(3000)
         cy.get(this.btnLogOut).should('be.visible').click({force:true})
     }
     verifyLogOut(){

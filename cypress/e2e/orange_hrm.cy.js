@@ -1,6 +1,7 @@
 import dashboard from "../page_objects/dashboard"
 import login from "../page_objects/login"
 import logout from "../page_objects/logout"
+import search from "../page_objects/search"
 
 describe('orange hrm tests', () => {
   //valid login credentials
@@ -21,14 +22,25 @@ describe('orange hrm tests', () => {
     lt.verifyLogOut()
   })
 
-  it('dashboard', () => {
+  it('verifying dashboard UI', () => {
     const dd = new dashboard()
     dd.verifyPageTitle()
     dd.verifyWidgetNumber()
     dd.verifyWidgetTitles()
   })
 
-  it('search', () => {
-    cy.log('this is a test')
+  it('searching for user info page', () => {
+    const sh = new search()
+    sh.useSearchBox("My Info")
+    sh.clickSearchResult("My Info")
+    sh.verifySearchResult("PIM")
   })
+
+  it('searching for directory page', () => {
+    const sh = new search()
+    sh.useSearchBox("Directory")
+    sh.clickSearchResult("Directory")
+    sh.verifySearchResult("Directory")
+  })
+
 })
