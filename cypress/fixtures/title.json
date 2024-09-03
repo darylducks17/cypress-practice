@@ -1,0 +1,29 @@
+[
+    {
+        "expected": "Time at Work"
+    },
+
+    {
+        "expected": "My Actions"
+    },
+
+    {
+        "expected": "Quick Launch"
+    },
+
+    {
+        "expected": "Buzz Latest Posts"
+    },
+
+    {
+        "expected": "Employees on Leave Today"
+    },
+
+    {
+        "expected": "Employee Distribution by Sub Unit"
+    }, 
+
+    {
+        "expected": "Employee Distribution by Location"
+    } 
+]
